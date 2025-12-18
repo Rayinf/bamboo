@@ -1,82 +1,82 @@
-# Bangboo Factory
+# Bangboo Factory (邦布工厂)
 
-**Bangboo Factory** is a creative web application that leverages the power of Google's Gemini 3 Pro AI to transform your photos into custom "Bangboo" characters, inspired by the art style of *Zenless Zone Zero*.
+**Bangboo Factory** 是一个创意 Web 应用程序，利用 Google Gemini 3 Pro AI 的强大功能，将您的照片转化为定制的“邦布”角色，灵感来源于《绝区零》(Zenless Zone Zero) 的艺术风格。
 
-Upload any photo, customize the mood and render style, and watch as the AI reconstructs it into a collectible character from the Hollows!
+只需上传任意照片，自定义心情和渲染风格，AI 就会将其重构为来自空洞的收藏级角色！
 
-## ✨ Features
+## ✨ 功能特性
 
-- **Image-to-Bangboo Transformation**: Converts uploaded photos into Bangboo-style characters while preserving key features.
-- **Customizable Styles**:
-  - **3D Cel-Shaded**: Matches the authentic Zenless Zone Zero visual style with clean outlines and vibrant colors.
-  - **Flat 2D**: A clean, vector-art style illustration.
-- **Mood Selection**: Choose from various expressions (Default, Happy, Angry, Sad, etc.) to give your Bangboo personality.
-- **Interactive UI**: Modern, game-inspired interface with CRT overlay effects and smooth animations.
-- **Powered by Gemini**: Utilizes the advanced `gemini-3-pro-image-preview` model for high-quality image generation.
+- **图像转邦布**：将上传的照片转换为邦布风格的角色，同时保留关键特征。
+- **自定义风格**：
+  - **3D 赛璐珞风格 (3D Cel-Shaded)**：匹配《绝区零》的真实视觉风格，具有清晰的轮廓和鲜艳的色彩。
+  - **扁平 2D 风格 (Flat 2D)**：干净的矢量艺术风格插图。
+- **心情选择**：从各种表情（默认、开心、生气、悲伤等）中进行选择，赋予您的邦布独特的个性。
+- **交互式 UI**：现代化的游戏风格界面，带有 CRT 叠加效果和流畅的动画。
+- **Gemini 驱动**：利用先进的 `gemini-3-pro-image-preview` 模型生成高质量图像。
 
-## 🛠️ Tech Stack
+## 🛠️ 技术栈
 
-- **Frontend**: React 19, TypeScript, Vite
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **AI Integration**: Google GenAI SDK (`@google/genai`)
+- **前端**：React 19, TypeScript, Vite
+- **样式**：Tailwind CSS
+- **图标**：Lucide React
+- **AI 集成**：Google GenAI SDK (`@google/genai`)
 
-## 🚀 Getting Started
+## 🚀 快速开始
 
-Follow these steps to set up the project locally.
+按照以下步骤在本地设置项目。
 
-### Prerequisites
+### 前置要求
 
-- Node.js (v18 or higher)
-- npm or yarn
-- A Google Cloud Project with the **Gemini API** enabled.
+- Node.js (v18 或更高版本)
+- npm 或 yarn
+- 一个已启用 **Gemini API** 的 Google Cloud 项目。
 
-### Installation
+### 安装步骤
 
-1.  **Clone the repository**
+1.  **克隆仓库**
     ```bash
     git clone https://github.com/Rayinf/bamboo.git
     cd bamboo
     ```
 
-2.  **Install dependencies**
+2.  **安装依赖**
     ```bash
     npm install
     ```
 
-3.  **Environment Setup**
-    Create a `.env` file in the root directory and add your Google Gemini API key:
+3.  **环境设置**
+    在根目录创建一个 `.env` 文件，并添加您的 Google Gemini API 密钥：
     ```env
-    # Note: For client-side usage in Vite, you might need to configure this specifically
-    # or ensure your build process handles process.env.API_KEY replacement.
+    # 注意：在 Vite 中进行客户端使用时，您可能需要特定配置
+    # 或确保构建过程处理 process.env.API_KEY 替换。
     API_KEY=your_google_gemini_api_key_here
     ```
-    *(Note: Ensure your API key is secured and usually restricted if used in a client-side application.)*
+    *(注意：请确保您的 API 密钥安全，如果在客户端应用程序中使用，通常需要进行限制。)*
 
-4.  **Run the development server**
+4.  **运行开发服务器**
     ```bash
     npm run dev
     ```
 
-5.  **Open the app**
-    Visit `http://localhost:5173` (or the URL shown in your terminal) to start creating Bangboos!
+5.  **打开应用**
+    访问 `http://localhost:5173`（或终端中显示的 URL）开始创建邦布！
 
-## 📖 Usage
+## 📖 使用指南
 
-1.  **Upload Image**: Drag & drop or select a photo in the "Input Data" zone.
-2.  **Configure**:
-    - Select a **Mood** (e.g., Happy, Angry).
-    - Choose a **Render Style** (3D or Flat).
-3.  **Generate**: Click the "Generate Bangboo" button.
-4.  **Save**: Once generated, you can download your custom Bangboo image.
+1.  **上传图片**：拖放或选择一张照片到“输入数据 (Input Data)”区域。
+2.  **配置**：
+    - 选择 **心情 (Mood)**（例如：开心、生气）。
+    - 选择 **渲染风格 (Render Style)**（3D 或 扁平）。
+3.  **生成**：点击“生成邦布 (Generate Bangboo)”按钮。
+4.  **保存**：生成完成后，您可以下载您的定制邦布图像。
 
-## 🤝 Contributing
+## 🤝 贡献
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+欢迎贡献代码！请随意提交 Pull Request。
 
-## 📄 License
+## 📄 许可证
 
-This project is open source and available under the [MIT License](LICENSE).
+本项目开源并遵循 [MIT 许可证](LICENSE)。
 
 ---
-*Disclaimer: This project is a fan creation and is not affiliated with HoYoverse or Zenless Zone Zero.*
+*免责声明：本项目为粉丝创作，与 HoYoverse 或《绝区零》无关。*
