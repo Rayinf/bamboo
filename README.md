@@ -14,6 +14,14 @@
 - **交互式 UI**：现代化的游戏风格界面，带有 CRT 叠加效果和流畅的动画。
 - **Gemini 驱动**：利用先进的 `gemini-3-pro-image-preview` 模型生成高质量图像。
 
+## 🖼️ 示例展示
+
+<div align="center">
+  <img src="screenshots/bangboo-1.png" width="200" alt="Bangboo Style 1" />
+  <img src="screenshots/bangboo-2.png" width="200" alt="Bangboo Style 2" />
+  <img src="screenshots/bangboo-3.png" width="200" alt="Bangboo Style 3" />
+</div>
+
 ## 🛠️ 技术栈
 
 - **前端**：React 19, TypeScript, Vite
